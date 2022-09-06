@@ -4,7 +4,7 @@ from googletrans import Translator
 
 
 FICHERO_PRUEBAS = 'file.txt'
-FICHERO_TRADUCIR = 'index.html'
+FICHERO_TRADUCIR = 'fichero_prueba.xlf'
 
 def traducir_en_to_es(texto: str):
     translator = Translator()
@@ -19,6 +19,7 @@ if __name__ == "__main__":
     
     with open(FICHERO_TRADUCIR, 'r') as file_in :
         filedata = file_in.read()
+        print(filedata)
     
         # for match in re.finditer(r'(?s)\<source\>\n(?:[^\n][\n]?)+\<\/source\>', filedata):
         #     print(match.start(), match.end())

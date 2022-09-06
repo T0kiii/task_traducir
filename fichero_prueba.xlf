@@ -1,0 +1,33 @@
+      <trans-unit id="filtro-input-grid.typeTextToFilter" datatype="html">
+        <source>Type text to filter...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/siloui/compartido/components/componentes-comunes-grid/filtro-input-grid.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="info-ubicacion.locationBasicInfo" datatype="html">
+        <source>
+
+        <x id="START_TAG_RENDER-ENTIDAD" ctype="x-render-entidad" equiv-text="&lt;render-entidad&gt;"/><x id="CLOSE_TAG_RENDER-ENTIDAD" ctype="x-render-entidad" equiv-text="&lt;/render-entidad&gt;"/>
+        location <x id="START_TAG_RENDER-NAVEGACION" ctype="x-render-navegacion" equiv-text="&lt;render-navegacion&gt;"/><x id="CLOSE_TAG_RENDER-NAVEGACION" ctype="x-render-navegacion" equiv-text="&lt;/render-navegacion&gt;"/>
+        of type <x id="START_TAG_RENDER-ENTIDAD_1" ctype="x-render-entidad" equiv-text="&lt;render-entidad&gt;"/><x id="CLOSE_TAG_RENDER-ENTIDAD" ctype="x-render-entidad" equiv-text="&lt;/render-entidad&gt;"/>
+        is in status <x id="START_TAG_RENDER-ENTIDAD_2" ctype="x-render-entidad" equiv-text="&lt;render-entidad&gt;"/><x id="CLOSE_TAG_RENDER-ENTIDAD" ctype="x-render-entidad" equiv-text="&lt;/render-entidad&gt;"/>
+        in site <x id="START_TAG_RENDER-ENTIDAD_3" ctype="x-render-entidad" equiv-text="&lt;render-entidad&gt;"/><x id="CLOSE_TAG_RENDER-ENTIDAD" ctype="x-render-entidad" equiv-text="&lt;/render-entidad&gt;"/>
+        at warehouse <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{ubicacion.ubi_almacen.almi_desc}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>. Its assignment status is <x id="START_TAG_RENDER-ENTIDAD_4" ctype="x-render-entidad" equiv-text="&lt;render-entidad&gt;"/><x id="CLOSE_TAG_RENDER-ENTIDAD" ctype="x-render-entidad" equiv-text="&lt;/render-entidad&gt;"/>.
+
+    </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/siloui/almacenaje/compartido/components/componentes-info/info-ubicacion.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="info-ubicacion.locationAdditionalInfo" datatype="html">
+        <source>
+
+        <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Height is <x id="START_TAG_RENDER-ENTIDAD" ctype="x-render-entidad" equiv-text="&lt;render-entidad&gt;"/><x id="CLOSE_TAG_RENDER-ENTIDAD" ctype="x-render-entidad" equiv-text="&lt;/render-entidad&gt;"/>. <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+
+        <x id="START_TAG_SPAN_1" ctype="x-span" equiv-text="&lt;span&gt;"/>Pair is <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{ubicacion.ubi_pareja}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>. <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+
+        <x id="START_TAG_SPAN_2" ctype="x-span" equiv-text="&lt;span&gt;"/>Front/back is <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION_1" equiv-text="{{ubicacion.ubi_pos_fondo}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>. <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+
+    </source>
