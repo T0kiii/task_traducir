@@ -3,29 +3,32 @@ import fileinput
 from googletrans import Translator
 
 
-FICHERO_PRUEBAS = 'file.txt'
+FICHERO_PRUEBAS = 'index.html'
 FICHERO_TRADUCIR = 'fichero_prueba.xlf'
 
-def traducir_en_to_es(texto: str):
+def traducir_en_to_es(textos):
     translator = Translator()
-    translation = translator.translate(texto, dest='es')
+    translation = translator.translate(textos, dest='es')
     
     return translation.text
 
 if __name__ == "__main__":
     print("Vamos a traducir")
     
-    patron = re.compile('(?s)\<source\>\n(?:[^\n][\n]?)+\<\/source\>')
+    # FUNCIONA: (?s)\<source\>\n*(?:[^\n][\n]?)+\<\/source\>
+    # a ver si funciona ---> (?s)\<source\>\n*([^\n][\n]?)+\<\/source\>
+    patron = re.compile('(?s)\<source\>\n*(?:[^\n][\n]?)+\<\/source\>')
     
     with open(FICHERO_TRADUCIR, 'r') as file_in :
         filedata = file_in.read()
-        print(filedata)
+        # print(filedata)
     
         # for match in re.finditer(r'(?s)\<source\>\n(?:[^\n][\n]?)+\<\/source\>', filedata):
         #     print(match.start(), match.end())
-        for match in re.findall(r'(?s)\<source\>\n(?:[^\n][\n]?)+\<\/source\>', filedata):
+        matches = re.findall(patron, filedata)
+        # for match in re.findall(patron, filedata):
             # print(match.start(), match.end())
-            print(match)
+        print(matches)
         # print(filedata)
     
     
